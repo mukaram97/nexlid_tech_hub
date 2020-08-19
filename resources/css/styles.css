@@ -1,0 +1,513 @@
+/**------------------------------**/
+/****BASIC SET-UP******/
+/**------------------------------**/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    color: #555;
+    font-family: 'Zilla+Slab', serif, 'Arial', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+}
+
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+section {
+    padding: 70px 0;
+}
+
+.banner {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)), url(img/neww.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+/**------------------------------**/
+/****HEADER******/
+/**------------------------------**/
+
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(images/slider1%20-%20Copy.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+h1, h2 {
+        font-weight: 300;
+    letter-spacing: 1px;
+    word-spacing: 4px;
+}
+h1 {
+    margin: 0;
+    margin-bottom: 2px;
+    color: white;
+    font-size: 300%;
+
+}
+h2 {
+    text-align: center;
+    font-size: 200%;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+h2:after {
+    display:block;
+    height: 2px;
+    background-color: deeppink;
+    content: " ";
+    width: 140px;
+    margin: 0 auto;
+    margin-top: 15px;
+}
+
+h3 {
+    color: white;
+    text-align: center;
+    font-weight: 300;
+    font-style: italic;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+}
+
+h4 {
+    margin-bottom: 15px;
+}
+.nexlid-text {
+    position: absolute;
+    top: 45%;
+    left: 30%;
+    margin-bottom: 20px;
+}
+
+/**------------BOTTONS--------------**/
+
+.botton:link,
+.botton:visited {
+    display: inline-block;
+    padding: 10px;
+    margin-right: 10px;
+    margin-top: 20px;
+    text-decoration: none;
+    font-weight: 300;
+    border-radius: 20px;
+    position: relative;
+    top: 50%;
+    left: 28%;
+    transition: background-color 0.3s, border 0.3s, color 0.3s;
+    
+}
+
+.btn-full:link,
+.btn-full:visited{
+    background-color: deeppink;
+    border:2px solid deeppink;
+    color: white;
+}
+
+.btn-ghost:link,
+.btn-ghost:visited {
+    border: 2px solid deeppink;
+    color: deeppink;
+    font-weight: 400;
+}
+
+
+.botton:hover,
+.botton:active {
+    background-color: #9b0657;
+}
+
+
+.btn-ghost:hover,
+.btn-ghost:active {
+    color: white;
+}
+
+
+/**------------LOGO AND NAV--------------**/
+
+
+
+.logo {
+    height: 60px;
+    float: left;
+    width: auto;
+    margin-top: 5px;
+}
+
+
+.sticky {
+    
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100%;
+    background-color: rgb(255, 255, 255, 0.98);
+    box-shadow: 0 2px 2px #e5e2e2;
+    z-index: 9999;
+    
+}
+
+
+.sticky .main-nav li a:link,
+.sticky .main-nav li a:visited{
+    text-decoration: none;
+    color: #555;
+    font-size: 90%;
+    padding-bottom: 2px;
+}
+
+
+
+.main-nav {
+    float: right;
+    list-style: none;
+    text-decoration: none;
+    margin-top: 15px;
+}   
+
+.main-nav li {
+    display: inline-block;
+    margin-left: 10px;
+    
+    
+}
+
+.main-nav li a:link,
+.main-nav li a:visited{
+    text-decoration: none;
+    color: white;
+    font-size: 90%;
+    padding-bottom: 2px;
+}
+
+
+.main-nav li a:hover,
+.main-nav li a:active{
+    border-bottom: 5px solid deeppink;
+    transition: border-bottom 0.3s;
+
+}
+
+
+.mobile-nav-icon {
+    float: right;
+    margin-top: 20px;
+    cursor: pointer;
+    display: none;
+}
+
+
+.mobile-nav-icon i {
+    
+    font-size: 200%;
+    color: #fff;
+}
+
+
+/**------------------------------**/
+/****ABOUT-SECTION******/
+/**------------------------------**/
+
+.about-section {
+    background-color: #f2f2f2;
+}
+
+.about-image {
+    width: 90%;
+    height: 300px;
+}
+
+
+.about-text {
+    margin-bottom: 50px;
+}
+
+.about-text li {
+    list-style: none;
+}
+
+
+.long-copy {
+    line-height: 145%;
+    width: 100%;
+    font-size: 100%;
+    text-align: center;
+    font-weight: 200;
+    padding: 1%;
+}
+
+/**------------------------------**/
+/****TEAM-SECTION******/
+/**------------------------------**/
+
+.team-section {
+    background-color: linear-gradient(rgba(23, 18, 18, 0.7), rgba(28, 18, 18, 0.7)) ;
+}
+.team-image {
+    width: 300px;
+}
+
+figcaption {
+    text-align: center;
+}
+
+/*
+figcaption {
+  background-color: rgba(153,153,153,.9);
+  padding: 20px;
+  font-family: Titillium, Arial, sans-serif;
+  font-weight: 400;
+  font-size: .9em;
+  color: white;
+  opacity: 0;
+  transition: opacity .75s ease-out;
+}
+.team figure:hover figcaption {
+  opacity: 1;
+}
+**/
+/**------------------------------**/
+/****NEWS-SECTION******/
+/**------------------------------**/
+
+.news-image {
+    width: 100%;
+}
+
+.news-text {
+    text-align:justify;
+    margin-top: 10px;
+}
+
+span  a {
+    background-color: azure;
+    color: black;
+    border: 1px solid gray;
+    border-radius: 40px;
+    padding: 10px;
+    text-decoration: none;
+    transition: background-color 0.5s, border 0.5s;
+}
+
+span a:active,
+span a:hover {
+    background: deeppink;
+}
+
+span {
+    display: inline-block;
+    margin-top: 30px;
+    text-transform: uppercase;
+    text-align: center;
+    
+}
+
+.news-meta a{
+    text-decoration: none;
+    color: gray;
+}
+
+
+/**------------------------------**/
+/****QUOTE-SECTION******/
+/**------------------------------**/
+
+
+.quote-section {
+    padding: 20px;
+    height: 100px;
+    background-color: deeppink;
+    text-align: center;
+    color: white;
+    font-size: 120%;
+    font-weight: 300;
+}
+
+.quote {
+    text-decoration: none;
+    background-color: white;
+    color: deeppink;
+    border: 2px solid white;
+    border-radius: 40px;
+    padding: 10px;
+    display: inline;
+    margin-left: 5%;
+    transition: background-color 0.5s, border 0.5s;
+    text-transform: capitalize;
+}
+
+.quote:hover,
+.quote:active{
+    background-color: deeppink;
+    color: white;
+    border: 2px solid white;
+}
+
+
+/**------------------------------**/
+/****QUOTE-SECTION******/
+/**------------------------------**/
+
+
+.form-group {
+    width: 100%;
+}
+
+input {
+    padding: 5px 0 5px 10px;
+    margin-bottom: 20px;
+    width: 100%
+}
+
+textarea {
+    width: 100%;
+    padding: 20px 0 0 10px;
+}
+
+.text-center {
+    text-align: center;
+    background-color: white;
+    color: white;
+}
+
+button {
+    background-color: white;
+    border: 2px solid gray;
+    border-radius: 40px;
+    margin-top: 10px;
+    padding: 10px;
+    text-transform: uppercase;
+    transition: background-color 0.5s, border 0.5s;
+}
+
+button:hover,
+button:active {
+    background-color: deeppink;
+    color: white;
+    border: 2px solid deeppink;
+}
+
+.footer-section {
+    background-color: #211f1f;
+    color: white;
+    height: 320px;    
+}
+
+.footer-nav {
+    text-decoration: none;
+}
+
+.footer-nav li {
+    
+    text-align: left;
+    text-decoration: none;
+    list-style: none;
+    margin-bottom: 5px;
+}
+
+.footer-nav li a {
+    text-decoration: none;
+    color: white;
+    text-transform: capitalize;
+}
+
+.subscribe li {
+    display: inline;
+    list-style: none;
+    
+}
+
+h4 {
+    
+}
+
+.services-header {
+    text-align: center;
+    font-size: 120%;
+}
+
+.icon-big {
+    font-size: 200%;
+    color: deeppink;
+    display: block;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.icon-about {
+    font-size: 80%;
+    color: deeppink;
+    padding-right: 10px;
+}
+
+.about-list {
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+.contact-icon {
+    font-size: 190%;
+    display: block;
+    text-align: center;
+}
+.contact-icon p {
+    text-align: center;
+}
+
+.contact-text {
+    text-align: center;
+}
+
+.contact-text a {
+    text-decoration: none;
+    color: gray;
+}
+
+.quote-mail {
+    margin-left: 5%;
+    width: 30%;
+}
+
+.social ul li {
+    display: inline-block;
+    list-style: none;
+    margin-right: 15px;
+}
+
+.social ul li a {
+    text-decoration: none;
+    font-size: 25px;;
+    text-align: center;
+}
+
+.facebook {
+    color: blue;
+    
+}
+
+.email {
+    color: red;
+}
+
+.instagram {
+    color: crimson;
+}
+
+.twitter {
+    color: deepskyblue;
+}
